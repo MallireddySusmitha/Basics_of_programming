@@ -1,26 +1,21 @@
-package fuction;
+package javaprogram;
 
 import java.util.Arrays;
 
 public class Reverse_Array {
-
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
-		int a[]=new int[4];
-		a[0]=1;
-		a[1]=2;
-		a[2]=3;
-		a[3]=4;
-		int b[]=new int[4];
-		for(int i=0,k=b.length-1;i<a.length;i++)
+		int old[]=new int[3];
+		old[0]=1;
+		old[1]=2;
+		old[2]=3;
+		int New[]=new int[3];
+		for(int i=0,k=2;i<old.length;i++)
 		{
-			b[k]=a[i];
+			New[k]=old[i];
 			k--;
-			
 		}
-		System.out.println(Arrays.toString(b));
-		
-
+		System.out.println(Arrays.toString(New));
 	}
 
 }

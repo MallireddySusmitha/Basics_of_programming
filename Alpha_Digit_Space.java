@@ -2,11 +2,10 @@ package javaprogram;
 
 import java.util.Arrays;
 
-public class Special_Character {
+public class Alpha_Digit_Space {
 	static int count_alpha;
 	static int count_digit;
 	static int count_space;
-	static int count_special;
 	public static void main(String[] args)
 	{
 		String a="my name is 123$@";
@@ -47,18 +46,6 @@ public class Special_Character {
 			
 		}
 		System.out.println( count_space);
-		System.out.println("Finding out the special character");
-		for(int i=0;i<a.length();i++)
-		{
-			boolean ans=Character.isAlphabetic(c[i]);
-			boolean ans1=Character.isDigit(c[i]);
-			boolean ans2=Character.isSpaceChar(c[i]);
-			if(ans==false && ans1==false && ans2==false)
-			{
-				count_special++;
-			}
-			
-		}
-		System.out.println(count_special);
 	}
+
 }
